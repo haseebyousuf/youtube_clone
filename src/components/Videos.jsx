@@ -5,7 +5,7 @@ import { VideoCard, ChannelCard } from "./";
 
 const Videos = ({ videos }) => {
     return (
-        <Stack direction="row" flexWrap="wrap" gap={2} justifyContent="start">
+        <Stack direction="row" flexWrap="wrap" gap={2} justifyContent="center">
             {videos.map((item, idx) => (
                 <Box key={idx}>
                     {item.id.videoId && <VideoCard video={item} />}
